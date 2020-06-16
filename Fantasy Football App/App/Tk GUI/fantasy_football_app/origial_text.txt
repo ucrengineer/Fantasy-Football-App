@@ -1,0 +1,11 @@
+        team1 = (int(self.rb_ranks_1),int(self.qb_ranks_1),int(self.rbppr_ranks_1),int(self.wr_ranks_1),\
+                int(self.wrppr_ranks_1),int(self.te_ranks_1),int(self.teppr_ranks_1),int(self.def_ranks_1),\
+                int(self.dfl_1),int(self.ofl_1),int(self.short_1),int(self.deep_1))
+        
+        team2 = (int(self.rb_ranks_2),int(self.qb_ranks_2),int(self.rbppr_ranks_2),int(self.wr_ranks_2),\
+                int(self.wrppr_ranks_2),int(self.te_ranks_2),int(self.teppr_ranks_2),int(self.def_ranks_2),\
+                int(self.dfl_2),int(self.ofl_2),int(self.short_2),int(self.deep_2))
+        
+        fig.add_subplot(111).set_xticklabels(['QB','RB','RB-PPR','WR','WR-PPR','TE','TE-PPR','DEF','DFL','OFL','SHORT','DEEP'])
+
+        
