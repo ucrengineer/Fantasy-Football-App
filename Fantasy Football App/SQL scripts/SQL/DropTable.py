@@ -1,9 +1,10 @@
 import psycopg2
 
 def droptable(tablename):
+    # removed my database login information
     DB_NAME = "vassiqtl"
-    DB_USER = "vassiqtl"
-    DB_PASS = "QIM8NDA9Xp19kPDg4JpwQPrN87HoTIeL"
+    DB_USER = "username"
+    DB_PASS = "password"
     DB_HOST = "raja.db.elephantsql.com"
     DB_PORT = "5432"
 
