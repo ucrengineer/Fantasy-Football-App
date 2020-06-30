@@ -3,8 +3,11 @@ import psycopg2
 def createffpatable():
     DB_NAME = "vassiqtl"
     DB_USER = "vassiqtl"
-    DB_PASS = "QIM8NDA9Xp19kPDg4JpwQPrN87HoTIeL"
-    DB_HOST = "raja.db.elephantsql.com"
+
+    # removed my database user information
+    DB_USER = "user name"
+    DB_PASS = "password"
+
     DB_PORT = "5432"
 
     conn = psycopg2.connect(database = DB_NAME, user = DB_USER,
