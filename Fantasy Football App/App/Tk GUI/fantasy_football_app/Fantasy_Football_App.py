@@ -37,8 +37,8 @@ class LoginScreen(tk.Frame):
         print('LoginScreen')
     """Main Function"""
     def verify(self):
-        if self.username.get() == 'bmoff001':
-            if self.password.get() == 'Moffett1988':
+        if self.username.get() == 'username':
+            if self.password.get() == 'password':
                 self.confirmation.set('Loading..')
                 LoginScreen.answer(self)
                 LoginScreen.clear_screen(self)
@@ -74,11 +74,11 @@ class LoginScreen(tk.Frame):
  
     def Load_team_data(self):
         try:
-            DB_NAME = "vassiqtl"
-            DB_USER = "vassiqtl"
-            DB_PASS = "QIM8NDA9Xp19kPDg4JpwQPrN87HoTIeL"
+            DB_NAME = "db"
+            DB_USER = "dbname"
+            DB_PASS = "dbpass"
             DB_HOST = "raja.db.elephantsql.com"
-            DB_PORT = "5432"
+            DB_PORT = "port#"
 
             self.conn_team = psycopg2.connect(database = DB_NAME, user = DB_USER,
                             password=DB_PASS, host= DB_HOST,port=DB_PORT)
@@ -91,12 +91,11 @@ class LoginScreen(tk.Frame):
 
     def Load_player_data(self):
         try:
-            
-            DB_NAME = "vassiqtl"
-            DB_USER = "vassiqtl"
-            DB_PASS = "QIM8NDA9Xp19kPDg4JpwQPrN87HoTIeL"
+       DB_NAME = "db"
+            DB_USER = "dbname"
+            DB_PASS = "dbpass"
             DB_HOST = "raja.db.elephantsql.com"
-            DB_PORT = "5432"
+            DB_PORT = "port#"
 
             self.conn_player = psycopg2.connect(database = DB_NAME, user = DB_USER,
                             password=DB_PASS, host= DB_HOST,port=DB_PORT)
